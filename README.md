@@ -18,6 +18,10 @@ Easiest way to pack/unpack struct data with three steps in Node.js.
 
 ## Quickstart
 
+[![npm version](https://badge.fury.io/js/ezstruct.svg)](https://www.npmjs.com/package/ezstruct)
+
+Install via: `npm install --save ezstruct`
+
 ```js
 const ezstruct = require('ezstruct')
 

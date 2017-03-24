@@ -21,9 +21,8 @@ typedef struct {
   int age;
   char name[32];
 } student;
-
-// then you can use context.student
 `
+// then you can use `context.student`
 
 // (optional) modify scheme. useful for char[]
 

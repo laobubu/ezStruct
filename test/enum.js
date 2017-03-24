@@ -26,7 +26,7 @@ typedef struct {
 } todo;
 `
 
-// (optional) modify scheme. useful for char[]
+// (optional) modify schema. useful for char[]
 
 context.todo.plan.default = "No Plan"
 context.todo.plan.encoding = "utf-8"

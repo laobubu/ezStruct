@@ -14,7 +14,7 @@ typedef struct {
 } student;
 `
 
-// (optional) modify scheme. useful for char[]
+// (optional) modify schema. useful for char[]
 
 context.student.name.default = "Unknown"
 context.student.name.encoding = "utf-8"

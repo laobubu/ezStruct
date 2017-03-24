@@ -1,0 +1,24 @@
+{
+  "name": "ezstruct",
+  "version": "0.0.1",
+  "description": "Easiest way to pack/unpack C struct data with three steps in Node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/laobubu/ezstruct.git"
+  },
+  "keywords": [
+    "binary",
+    "struct",
+    "bufffer"
+  ],
+  "author": "laobubu <laobubu@gmail.com> (http://laobubu.net)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/laobubu/ezstruct/issues"
+  },
+  "homepage": "https://github.com/laobubu/ezstruct#readme"
+}

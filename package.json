@@ -1,6 +1,6 @@
 {
   "name": "ezstruct",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Easiest way to pack/unpack C struct data with three steps in Node.js",
   "main": "index.js",
   "scripts": {
@@ -23,5 +23,9 @@
   "bugs": {
     "url": "https://github.com/laobubu/ezStruct/issues"
   },
-  "homepage": "https://github.com/laobubu/ezStruct#readme"
+  "homepage": "https://github.com/laobubu/ezStruct#readme",
+  "devDependencies": {
+    "iconv": "^2.2.1",
+    "iconv-lite": "^0.4.15"
+  }
 }

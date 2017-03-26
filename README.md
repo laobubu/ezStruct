@@ -24,6 +24,8 @@ Install via: `npm install --save ezstruct`
 
 ```js
 const ezstruct = require('ezstruct')
+ezstruct.setStringEncoding('utf-8')
+// install iconv-lite to handle more encodings
 
 // create context
 // ES6 template tag is supported.
@@ -74,6 +76,16 @@ Call `ezstruct = require('ezstruct')` and get the **context builder function**.
 
 Once you get the Context, you may get data-type **Schema**s like `ctx["struct tm"]`,
 or `ctx.timer_t` if it's declared.
+
+#### ezstruct.setStringEncoding(encoding)
+
+- `encoding: string|null`
+- (remarks)
+  1. Call this **before creating an Context**, then all new `char[]` fields of structs will be affected.
+  2. Also works for multi-dimension `char` array.
+  3. This method will **not affect** Contexts that are **created before**.
+  4. Install [`iconv-lite` package](https://www.npmjs.com/package/iconv-lite) if you want to handle [Encodings that Not Supported by NodeJS](https://nodejs.org/api/buffer.html#buffer_buffers_and_character_encodings)
+  5. `iconv-lite` is not in dependency list. Run `npm i --save iconv-lite` before using.
 
 ### Schema
 
@@ -128,7 +140,7 @@ Properties:
 - `name: string`
 - `type: string` like `"int"` or `"char[128]"`
 - `default: any` (optional) default value
-- `encoding: string` (optional) only for `char[]`, `char[3][128]` and so on
+- `encoding: string` (optional) for char strings only. see `ezstruct.setStringEncoding`
 
 ### Enum (Schema)
 

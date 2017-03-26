@@ -9,12 +9,12 @@ Easiest way to pack/unpack struct data with three steps in Node.js.
 ## What's Supported
 
 - typedef (also works for struct, enum and array)
-- array
+- (multi-dimension) array
 - (nested) struct
 - enum
 - anonymous enum/struct
-- basic number types (little-endian 8,16,32 bits)
-- `char soemthing[64]` as string
+- basic number types (little-endian {8,16,32}-bit integer, 32-bit float and double)
+- `char something[64]` as string
 
 ## Quickstart
 
@@ -128,7 +128,7 @@ Properties:
 - `name: string`
 - `type: string` like `"int"` or `"char[128]"`
 - `default: any` (optional) default value
-- `encoding: string` (optional) for `char[]` type only.
+- `encoding: string` (optional) only for `char[]`, `char[3][128]` and so on
 
 ### Enum (Schema)
 
@@ -141,4 +141,4 @@ It is an alias of `int`, with extra properties:
 
 - union
 - big-endian
-- set char encoding at `typedef`
+- set char encoding with comments
